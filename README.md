@@ -31,7 +31,7 @@
   * 我们将OpenEntityManagerInViewFilter注册为Servlet过滤器，以便我们在渲染视图时可以延迟加载JPA Entity的延迟集合。
   
 5. 注意：
-  项目启动时，要求tomcat的版本要在7.0及以上，以下的servlet版本不是3.x之后的版本导致项目不能运行。
+  项目启动时，**要求tomcat的版本要在7.0及以上，以下的servlet版本不是3.x之后的版本导致项目不能运行。**
 
 # 说明
 
