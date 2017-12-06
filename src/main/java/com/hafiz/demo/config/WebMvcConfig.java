@@ -17,7 +17,11 @@ import org.thymeleaf.templateresolver.TemplateResolver;
  * Created by hafiz.zhang on 2017/9/6.
  */
 @Configuration
-@ComponentScan(basePackages = {"com.hafiz.demo.controller"})
+@ComponentScan(
+        basePackages = {"com.hafiz.demo.controller"},
+        useDefaultFilters = false,
+        includeFilters = @ComponentScan.Filter(value = org.springframework.stereotype.Controller.class)
+)
 @EnableWebMvc
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
